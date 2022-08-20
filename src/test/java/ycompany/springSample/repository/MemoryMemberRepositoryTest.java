@@ -2,6 +2,7 @@ package ycompany.springSample.repository;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.test.annotation.Commit;
 import ycompany.springSample.domain.Member;
 
 import java.util.List;

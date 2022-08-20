@@ -2,6 +2,7 @@ package ycompany.springSample.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ycompany.springSample.domain.Member;
 import ycompany.springSample.repository.MemberRepository;
 import ycompany.springSample.repository.MemoryMemberRepository;
@@ -9,6 +10,7 @@ import ycompany.springSample.repository.MemoryMemberRepository;
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 public class MemberService {
     private final MemberRepository memberRepository;
 
